@@ -14,18 +14,18 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 	"time"
 )
 
 func main() {
-	go say("blah")
-	time.Sleep(time.Second * 5)
+	say("blah")
+	go say("blop")
+	time.Sleep(time.Second * 5) // gives the goroutine a chance to execute itself in that framed time
 }
 
 func say(msg string) {
-	for i := 0; ; i++ {
+	for i := 0; i < 5; i++ {
 		fmt.Printf("%s, %d\n", msg, i)
-		time.Sleep(time.Millisecond * time.Duration(rand.Intn(1e3)))
+		time.Sleep(time.Second * 5)
 	}
 }
