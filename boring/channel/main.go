@@ -14,9 +14,11 @@ func main() {
 	// c := make(chan string)
 	// go say("blah", c)
 	// generator "pattern" for main x goroutine sync thanks to channel use
-	c := say("blop")
+	c1 := say("blop")
+	c2 := say("blah")
 	for i := 0; i < 5; i++ {
-		fmt.Println(<-c)
+		fmt.Println(<-c1)
+		fmt.Println(<-c2)
 	}
 
 }
