@@ -2,8 +2,8 @@ Kata                Last done   Done  Level  Topics
 ----                ---------   ----  -----  ------
 \areader            never         0x
 \battery            never         0x
-\boring\boring      never         0x
-\boring\channel     never         0x
+\boring\boring      27/11/24      1x  beginner 
+\boring\channel     28/11/24      1x  beginner
 \boring\generator   never         0x
 \boring\lockstep    never         0x
 \boring\multiplex   never         0x
